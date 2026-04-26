@@ -34,7 +34,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          accountId: a253f858809599b8b9bcdfee4eea1cee
           projectName: carnesbinefar-web
           directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
