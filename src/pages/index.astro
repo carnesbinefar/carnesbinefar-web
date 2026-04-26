@@ -1,0 +1,637 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NewsCard from '../components/NewsCard.astro';
+
+const news = [
+  {
+    title: "Nominados en los premios Porc d'Or 2025",
+    date: "7 enero 2026",
+    excerpt: "El 2025 marca un hito en nuestra trayectoria. Con orgullo compartimos que Carnes Binéfar ha sido nominado nuevamente a los premios Porc d'Or, esta vez en la 4ª categoría.",
+    href: "/finalistas-en-los-premios-porc-dor-2025",
+    accent: "#b6347b",
+    image: "/images/2025-470x470.jpg",
+  },
+  {
+    title: "Instalación de placas solares para autoconsumo",
+    date: "3 agosto 2025",
+    excerpt: "Carnes Binéfar ha instalado paneles fotovoltaicos para autoconsumo en sus instalaciones, con una potencia de 137,16 kW y cofinanciado por el programa NextGenerationEU.",
+    href: "/instalacion-de-placas-solares-para-autoconsumo",
+    accent: "#61a229",
+    image: "/images/photo-1497440001374-f26997328c1b-470x470.jpg",
+  },
+  {
+    title: "Bronce en los premios Porc d'Or 2021",
+    date: "12 octubre 2021",
+    excerpt: "La granja de Santalecina obtuvo el Bronce en la 3ª categoría por productividad numérica excelente, uno de los reconocimientos más altos del sector a nivel estatal.",
+    href: "/finalistas-en-los-premios-porc-dor-2021",
+    accent: "#c07830",
+    image: "/images/2021-470x470.jpg",
+  },
+  {
+    title: "Bronce en los premios Porc d'Or 2020",
+    date: "12 octubre 2020",
+    excerpt: "La granja de Santalecina (Huesca) logró el reconocimiento de Bronce en la 3ª categoría por productividad numérica excelente en los premios Porc d'Or 2020.",
+    href: "/finalistas-en-los-premios-porc-dor-2020",
+    accent: "#a06428",
+    image: "/images/Gemini_Generated_Image_cstamtcstamtcsta-470x470.png",
+  },
+  {
+    title: "Finalistas en los Premios Porc d'Or 2018",
+    date: "23 noviembre 2018",
+    excerpt: "Una de nuestras granjas fue nominada en la categoría de productividad numérica en los premios Porc d'Or 2018, celebrados en Lleida con cerca de 1.000 profesionales del sector.",
+    href: "/hello-world",
+    accent: "#922a62",
+    image: "/images/porcdor-470x394.png",
+  },
+];
+---
+
+<Layout title="Inicio">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-circle hero-circle-1"></div>
+      <div class="hero-circle hero-circle-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">Binéfar, Huesca · Desde 1989</div>
+      <h1 id="hero-title" class="hero-title">
+        Especialistas en<br />
+        <em>cría y engorde</em><br />
+        de animales
+      </h1>
+      <p class="hero-subtitle">
+        Carnes Binéfar S.A. — empresa ganadera aragonesa dedicada a la cría y explotación de ganado porcino y bovino con tecnología de vanguardia y máximo respeto al bienestar animal.
+      </p>
+      <div class="hero-actions">
+        <a href="/quien-somos" class="btn btn-outline-white">Quién somos</a>
+        <a href="/contacto" class="btn btn-accent">Contactar</a>
+      </div>
+    </div>
+    <div class="hero-stats" aria-label="Cifras clave">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-value">1989</span>
+            <span class="stat-label">Año de fundación</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value">+200K</span>
+            <span class="stat-label">Lechones criados al año</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value">+50</span>
+            <span class="stat-label">Granjas en Huesca</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value">Porc d'Or</span>
+            <span class="stat-label">Premio nacional 2020 y 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section class="section about-section" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-header">
+            <span class="section-eyebrow">Quiénes somos</span>
+            <div class="divider"></div>
+            <h2 id="about-title" class="section-title">Ganadería de calidad<br />desde el origen</h2>
+          </div>
+          <p>
+            <strong>Carnes Binéfar S.A.</strong> es una empresa ganadera fundada en 1989 en Binéfar, Huesca, especializada en la cría y explotación de ganado porcino y bovino. Nuestras instalaciones se distribuyen por varios municipios aragoneses y cuentan con tecnología avanzada.
+          </p>
+          <p>
+            Aplicamos selección genética para producir carnes más tiernas, sabrosas y nutritivas. El pasado año criamos y engordamos más de 200.000 lechones, manteniendo siempre los más altos estándares de bienestar animal.
+          </p>
+          <a href="/quien-somos" class="btn btn-outline" style="margin-top: 1.25rem;">Conocer más</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-photo-wrap">
+            <img
+              src="/images/markus-spiske-pZX9QPxeIQc-unsplash-592x592.jpg"
+              alt="Ganadería Carnes Binéfar — cría de animales"
+              class="about-photo"
+              loading="lazy"
+              width="592"
+              height="592"
+            />
+            <div class="about-photo-badge">
+              <span class="about-photo-badge-num">+200K</span>
+              <span class="about-photo-badge-label">lechones / año</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section services-section" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header" style="text-align: center; align-items: center; display: flex; flex-direction: column;">
+        <span class="section-eyebrow">Nuestros servicios</span>
+        <div class="divider"></div>
+        <h2 id="services-title" class="section-title">Lo que ofrecemos<br />a las granjas colaboradoras</h2>
+        <p class="section-lead" style="text-align: center;">
+          Acompañamos a las granjas colaboradoras con un servicio integral que reduce costes operativos, disminuye la mortalidad y garantiza el control sanitario.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(182,52,123,0.1); color: var(--color-primary)">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M16 10v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 16h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Control veterinario</h3>
+          <p>Supervisión sanitaria continua y control de enfermedades para mantener los estándares de salud del ganado en los más altos niveles.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(97,162,41,0.1); color: var(--color-accent)">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 26c0-4.42 3.58-8 8-8s8 3.58 8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M4 26c0-3.31 2.69-6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M28 26c0-3.31-2.69-6-6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Suministro de animales</h3>
+          <p>Proporcionamos el ganado con garantías genéticas y sanitarias certificadas, asegurando la calidad desde el origen.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(182,52,123,0.07); color: var(--color-primary-dark)">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 26l4-10 6 5 6-10 4 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <h3>Suministro de pienso</h3>
+          <p>Alimentación equilibrada y de calidad optimizada para el crecimiento, la salud y el rendimiento de cada fase productiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="section news-section" aria-labelledby="news-title">
+    <div class="container">
+      <div class="news-header">
+        <div>
+          <span class="section-eyebrow">Noticias</span>
+          <div class="divider"></div>
+          <h2 id="news-title" class="section-title">Últimas novedades</h2>
+        </div>
+      </div>
+      <div class="news-grid">
+        {news.map(item => (
+          <NewsCard
+            title={item.title}
+            date={item.date}
+            excerpt={item.excerpt}
+            href={item.href}
+            accent={item.accent}
+            image={item.image}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2 id="cta-title">¿Te interesa trabajar con nosotros?</h2>
+          <p>Buscamos personas motivadas interesadas en el sector ganadero, con o sin experiencia previa, dispuestas a instalarse cerca de nuestras granjas en la provincia de Huesca.</p>
+        </div>
+        <a href="/trabaja-con-nosotros" class="btn btn-primary">Ver vacantes</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* ── Hero ── */
+  .hero {
+    background:
+      linear-gradient(150deg, rgba(107,26,68,0.93) 0%, rgba(146,42,98,0.88) 40%, rgba(182,52,123,0.80) 100%),
+      url('/images/cropped-stijn-te-strake-UdhpcfImQ9Y-unsplash.jpg') center / cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding-top: 5rem;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .hero-circle-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    right: -100px;
+  }
+
+  .hero-circle-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    left: -80px;
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 4rem;
+    max-width: 680px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .btn-accent {
+    background: var(--color-accent);
+    color: white;
+    border: 2px solid var(--color-accent);
+    padding: 0.8rem 1.8rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    transition: all var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .btn-accent:hover {
+    background: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(97, 162, 41, 0.35);
+  }
+
+  /* Stats bar */
+  .hero-stats {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .stats-grid {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 1.5rem 0;
+    overflow-x: auto;
+  }
+
+  .stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    min-width: 120px;
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+  }
+
+  /* ── About ── */
+  .about-section {
+    background: var(--color-surface);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-text p {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.75;
+  }
+
+  .about-text strong {
+    color: var(--color-text);
+  }
+
+  .about-visual {
+    position: relative;
+  }
+
+  .about-photo-wrap {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 1;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .about-photo-wrap:hover .about-photo {
+    transform: scale(1.03);
+  }
+
+  .about-photo-badge {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    background: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.1rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(182, 52, 123, 0.4);
+  }
+
+  .about-photo-badge-num {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.15rem;
+  }
+
+  .about-photo-badge-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+
+  /* ── Services ── */
+  .services-section {
+    background: var(--color-bg);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.75rem;
+    transition: all var(--transition);
+  }
+
+  .service-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+  }
+
+  .service-card p {
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+  }
+
+  /* ── News ── */
+  .news-section {
+    background: var(--color-surface);
+  }
+
+  .news-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: linear-gradient(135deg, #7a1f4e, #b6347b);
+    padding: 4rem 0;
+  }
+
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-text h2 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: white;
+    margin-bottom: 0.6rem;
+  }
+
+  .cta-text p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 540px;
+    line-height: 1.65;
+  }
+
+  .cta-section .btn-primary {
+    background: white;
+    color: var(--color-primary);
+    border-color: white;
+    flex-shrink: 0;
+  }
+
+  .cta-section .btn-primary:hover {
+    background: var(--color-bg);
+    border-color: var(--color-bg);
+    color: var(--color-primary-dark);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 980px) {
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+      gap: 0;
+    }
+
+    .stat-value {
+      font-size: 1.3rem;
+    }
+
+    .cta-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .cta-text p {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-visual {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+    }
+  }
+</style>

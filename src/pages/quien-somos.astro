@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Quién somos"
+  description="Carnes Binéfar S.A. — empresa ganadera fundada en 1989 en Binéfar, Huesca, especializada en cría y engorde de ganado porcino y bovino."
+>
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Quién somos</span>
+      </nav>
+      <h1>Quién somos</h1>
+      <p class="lead">Especialistas en cría y engorde de animales desde 1989 en Binéfar, Huesca.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose main-content">
+        <h2>Carnes Binéfar S.A.</h2>
+        <p>
+          <strong>Carnes Binéfar S.A.</strong> es una empresa ganadera fundada en 1989 en Binéfar (Huesca), especializada en la cría y explotación de ganado porcino y bovino. Desde nuestros inicios hemos apostado por una ganadería de calidad, centrada en el bienestar animal y la eficiencia productiva.
+        </p>
+        <p>
+          Nuestras instalaciones se distribuyen por varios municipios aragoneses y están equipadas con tecnología avanzada que nos permite ofrecer las mejores condiciones de cría. Aplicamos una rigurosa selección genética para producir carnes más tiernas, sabrosas y nutritivas.
+        </p>
+
+        <h2>Nuestras granjas</h2>
+        <p>
+          Disponemos de más de 50 granjas en la provincia de Huesca donde criamos y engordamos más de 200.000 lechones al año:
+        </p>
+        <ul>
+          <li><strong>Espartal</strong> — granja porcina en la comarca de La Litera</li>
+          <li><strong>Lecineras</strong> — instalaciones de cría y engorde</li>
+          <li><strong>Santalecina</strong> — reconocida en múltiples ediciones de los Premios Porc d'Or</li>
+        </ul>
+
+        <h2>Nuestro modelo de integración</h2>
+        <p>
+          Carnes Binéfar opera bajo un modelo de integración que permite a las granjas colaboradoras beneficiarse de un servicio completo:
+        </p>
+        <ul>
+          <li><strong>Control veterinario continuo</strong> y protocolo de prevención de enfermedades</li>
+          <li><strong>Suministro de animales</strong> con garantías genéticas y sanitarias</li>
+          <li><strong>Suministro de pienso</strong> de calidad optimizado para cada fase</li>
+          <li><strong>Reducción de costes operativos</strong> y mejora de la rentabilidad</li>
+          <li><strong>Disminución de la mortalidad</strong> gracias al seguimiento continuo</li>
+        </ul>
+
+        <h2>Premios y reconocimientos</h2>
+        <p>
+          Nuestra granja de Santalecina ha sido reconocida en repetidas ocasiones en los <strong>Premios Porc d'Or</strong>, los galardones más prestigiosos del sector porcino a nivel estatal, gestionados por el IRTA a partir de datos de BDporc:
+        </p>
+        <ul>
+          <li>Nominados a los Premios Porc d'Or 2025 (4ª categoría, gestión de lactación)</li>
+          <li>Bronce en los Premios Porc d'Or 2021 (3ª categoría, productividad numérica)</li>
+          <li>Bronce en los Premios Porc d'Or 2020 (3ª categoría, productividad numérica)</li>
+          <li>Finalistas en los Premios Porc d'Or 2018 (3ª categoría)</li>
+        </ul>
+
+        <h2>Sostenibilidad</h2>
+        <p>
+          En 2025, Carnes Binéfar instaló paneles fotovoltaicos para autoconsumo con una potencia de 137,16 kW, con una inversión total de 124.025 € cofinanciada por el programa <strong>NextGenerationEU</strong>. Esta iniciativa forma parte de nuestro compromiso con la sostenibilidad ambiental y la reducción de nuestra huella de carbono.
+        </p>
+      </article>
+
+      <aside class="sidebar">
+        <div class="info-card">
+          <h3>Datos de la empresa</h3>
+          <dl>
+            <dt>Razón social</dt>
+            <dd>Carnes Binéfar S.A.</dd>
+            <dt>CIF</dt>
+            <dd>A25206327</dd>
+            <dt>Fundación</dt>
+            <dd>1989</dd>
+            <dt>Sede</dt>
+            <dd>Calle Azanuy 7<br />Binéfar, Huesca</dd>
+            <dt>Actividad</dt>
+            <dd>Ganadería porcina y bovina</dd>
+            <dt>Granjas</dt>
+            <dd>Espartal, Lecineras, Santalecina</dd>
+          </dl>
+        </div>
+        <div class="contact-card">
+          <h3>Contacto</h3>
+          <p>
+            <a href="tel:+34974429591">974 42 95 91</a>
+          </p>
+          <p>
+            <a href="mailto:info@carnesbinefar.es">info@carnesbinefar.es</a>
+          </p>
+          <a href="/contacto" class="btn btn-primary" style="margin-top: 1rem; width: 100%; justify-content: center;">
+            Enviar mensaje
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .main-content {
+    min-width: 0;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 90px;
+  }
+
+  .info-card,
+  .contact-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.6rem;
+  }
+
+  .info-card h3,
+  .contact-card h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 0.5rem 1rem;
+    align-items: start;
+  }
+
+  dt {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    padding-top: 0.1rem;
+  }
+
+  dd {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+
+  .contact-card p {
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-card a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 900px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

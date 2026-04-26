@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Aviso legal"
+  description="Aviso legal de Carnes Binéfar S.A. — CIF A25206327. Información sobre el titular del sitio web y condiciones de uso."
+>
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Aviso legal</span>
+      </nav>
+      <h1>Aviso legal</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container legal-layout">
+      <article class="prose">
+        <h2>1. Datos del titular</h2>
+        <p>
+          En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se informa de los datos identificativos del titular del presente sitio web:
+        </p>
+        <ul>
+          <li><strong>Razón social:</strong> CARNES BINÉFAR S.A.</li>
+          <li><strong>NIF/CIF:</strong> A25206327</li>
+          <li><strong>Representante:</strong> Joan Salvatella Ibáñez</li>
+          <li><strong>Domicilio social:</strong> Calle Azanuy 7, Binéfar, Huesca (España)</li>
+          <li><strong>Teléfono:</strong> 974 42 95 91</li>
+          <li><strong>Email:</strong> <a href="mailto:info@carnesbinefar.es">info@carnesbinefar.es</a></li>
+          <li><strong>Registro Mercantil:</strong> Registro Mercantil de Huesca</li>
+        </ul>
+
+        <h2>2. Objeto y ámbito de aplicación</h2>
+        <p>
+          El presente Aviso Legal regula el acceso y uso del sitio web <strong>carnesbinefar.es</strong> (en adelante, "el Sitio Web"), del que es titular CARNES BINÉFAR S.A. El acceso y uso del Sitio Web implica la aceptación plena y sin reservas de todas las disposiciones incluidas en este Aviso Legal.
+        </p>
+        <p>
+          CARNES BINÉFAR S.A. se reserva el derecho a modificar la presentación y configuración del Sitio Web, así como el presente Aviso Legal, en cualquier momento y sin previo aviso. El usuario deberá leer atentamente el Aviso Legal cada vez que acceda al Sitio Web.
+        </p>
+
+        <h2>3. Condiciones de acceso y uso</h2>
+        <p>
+          El usuario se compromete a hacer un uso adecuado de los contenidos y servicios del Sitio Web y a no emplearlos para realizar actividades ilícitas o contrarias a la ley, la moral y las buenas costumbres, o que resulten lesivas de los derechos de terceros.
+        </p>
+        <p>
+          CARNES BINÉFAR S.A. no garantiza la disponibilidad y continuidad del funcionamiento del Sitio Web, ni se responsabiliza de los daños y perjuicios que pudieran derivarse de la falta de disponibilidad del Sitio Web, de errores, virus o cualquier otro elemento informático que pueda causar daños en los sistemas informáticos, equipos o documentos del usuario.
+        </p>
+
+        <h2>4. Propiedad intelectual e industrial</h2>
+        <p>
+          Todos los contenidos del Sitio Web (textos, imágenes, diseños, logotipos, marcas y demás elementos) son propiedad de CARNES BINÉFAR S.A. o de sus licenciantes, y están protegidos por la normativa española e internacional sobre propiedad intelectual e industrial.
+        </p>
+        <p>
+          Queda expresamente prohibida la reproducción, distribución, comunicación pública o transformación de los contenidos del Sitio Web con fines comerciales sin autorización previa y por escrito de CARNES BINÉFAR S.A. El usuario puede utilizar los contenidos del Sitio Web para uso personal y no comercial.
+        </p>
+
+        <h2>5. Política de enlaces</h2>
+        <p>
+          El Sitio Web puede contener enlaces a sitios web de terceros. CARNES BINÉFAR S.A. no se hace responsable del contenido de dichos sitios ni de los daños o perjuicios que puedan derivarse del acceso a los mismos.
+        </p>
+        <p>
+          Los sitios web que deseen establecer enlaces al Sitio Web deberán hacerlo de forma que no induzca a error o confusión sobre la procedencia de los contenidos, y no podrán reproducir contenidos protegidos sin autorización expresa.
+        </p>
+
+        <h2>6. Exclusión de responsabilidad</h2>
+        <p>
+          CARNES BINÉFAR S.A. no será responsable de los daños y perjuicios de cualquier naturaleza que pudieran ocasionarse por el uso del Sitio Web, incluyendo, con carácter enunciativo y no limitativo, errores u omisiones en los contenidos, falta de disponibilidad, transmisión de virus, o los producidos por causas de fuerza mayor.
+        </p>
+
+        <h2>7. Legislación aplicable y jurisdicción</h2>
+        <p>
+          Las relaciones entre CARNES BINÉFAR S.A. y el usuario se regirán por la legislación española vigente. Para la resolución de cualesquiera controversias que pudieran surgir, las partes se someten a los Juzgados y Tribunales competentes conforme a derecho, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.
+        </p>
+      </article>
+
+      <aside class="legal-sidebar">
+        <div class="sidebar-card">
+          <h3>Documentos legales</h3>
+          <ul>
+            <li><a href="/aviso-legal" aria-current="page">Aviso legal</a></li>
+            <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+            <li><a href="/prevencion">Prevención del acoso</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Contacto legal</h3>
+          <p>Para cualquier consulta relacionada con el aviso legal:</p>
+          <a href="mailto:info@carnesbinefar.es">info@carnesbinefar.es</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .legal-sidebar {
+    position: sticky;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sidebar-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.4rem;
+  }
+
+  .sidebar-card h3 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+
+  .sidebar-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .sidebar-card li a {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    padding: 0.35rem 0;
+    display: block;
+    transition: color var(--transition);
+  }
+
+  .sidebar-card li a:hover,
+  .sidebar-card li a[aria-current="page"] {
+    color: var(--color-primary);
+  }
+
+  .sidebar-card p {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .sidebar-card > a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    word-break: break-all;
+  }
+
+  @media (max-width: 900px) {
+    .legal-layout {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .legal-sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .legal-sidebar {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

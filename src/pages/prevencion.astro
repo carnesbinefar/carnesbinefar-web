@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Prevención del acoso laboral"
+  description="Protocolo de prevención y actuación frente al acoso laboral y sexual de Carnes Binéfar S.A."
+>
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Prevención del acoso</span>
+      </nav>
+      <h1>Prevención del acoso laboral</h1>
+      <p class="lead">Protocolo de prevención y actuación frente al acoso laboral y sexual.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container legal-layout">
+      <article class="prose">
+        <h2>1. Declaración de principios</h2>
+        <p>
+          CARNES BINÉFAR S.A. declara su firme compromiso con la creación y el mantenimiento de un entorno laboral en el que todas las personas sean tratadas con dignidad y respeto. La empresa tiene una política de tolerancia cero frente a cualquier forma de acoso, ya sea de naturaleza laboral, sexual o por razón de sexo.
+        </p>
+        <p>
+          Este protocolo se enmarca en el cumplimiento del artículo 48 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, así como del Real Decreto-Ley 6/2019, de 1 de marzo.
+        </p>
+
+        <h2>2. Ámbito de aplicación</h2>
+        <p>
+          El presente protocolo es de aplicación a todas las personas trabajadoras de CARNES BINÉFAR S.A., independientemente de su categoría profesional, tipo de contrato o duración del mismo, así como a toda persona que preste servicios en cualquiera de las instalaciones de la empresa.
+        </p>
+
+        <h2>3. Definiciones</h2>
+        <h3>Acoso laboral (mobbing)</h3>
+        <p>
+          Se entenderá por acoso laboral toda conducta, práctica o comportamiento, realizado de forma sistemática o recurrente en el seno de una relación de trabajo, que suponga directa o indirectamente un menoscabo o atentado contra la dignidad de la persona trabajadora, a quien se intenta someter emocional y psicológicamente de forma violenta u hostil.
+        </p>
+        <h3>Acoso sexual</h3>
+        <p>
+          Constituye acoso sexual cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.
+        </p>
+        <h3>Acoso por razón de sexo</h3>
+        <p>
+          Es todo comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo.
+        </p>
+
+        <h2>4. Procedimiento de actuación</h2>
+        <p>Cualquier persona trabajadora que considere que está siendo objeto de acoso podrá iniciar el procedimiento a través de los siguientes pasos:</p>
+        <ol style="padding-left: 1.5rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+          <li style="margin-bottom: 0.5rem;"><strong>Comunicación:</strong> la persona afectada pondrá en conocimiento de la empresa la situación, de forma verbal o escrita, dirigiéndose a la persona responsable de recursos humanos o a la dirección.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Investigación:</strong> se iniciará una investigación confidencial, imparcial y rápida en la que se escuchará a todas las partes implicadas.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Resolución:</strong> concluida la investigación, se adoptarán las medidas oportunas, que podrán incluir medidas disciplinarias conforme al régimen sancionador aplicable.</li>
+        </ol>
+
+        <h2>5. Garantías de confidencialidad</h2>
+        <p>
+          Se garantiza la más estricta confidencialidad a todas las personas implicadas en el procedimiento. Ninguna persona podrá ser objeto de represalias o medidas adversas como consecuencia de haber presentado una queja de acoso o de haber participado como testigo.
+        </p>
+
+        <h2>6. Canales de comunicación</h2>
+        <p>Para presentar una comunicación relacionada con este protocolo, dirigirse a:</p>
+        <ul>
+          <li><strong>Correo electrónico:</strong> <a href="mailto:info@carnesbinefar.es">info@carnesbinefar.es</a></li>
+          <li><strong>Correo postal:</strong> CARNES BINÉFAR S.A., Calle Azanuy 7, Binéfar, Huesca</li>
+        </ul>
+
+        <h2>7. Régimen sancionador</h2>
+        <p>
+          Las conductas constitutivas de acoso laboral, sexual o por razón de sexo serán sancionadas conforme a lo previsto en la normativa laboral vigente y en el convenio colectivo aplicable, pudiendo llegar, según la gravedad, hasta el despido disciplinario.
+        </p>
+      </article>
+
+      <aside class="legal-sidebar">
+        <div class="sidebar-card">
+          <h3>Documentos legales</h3>
+          <ul>
+            <li><a href="/aviso-legal">Aviso legal</a></li>
+            <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+            <li><a href="/prevencion" aria-current="page">Prevención del acoso</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Canal de comunicación</h3>
+          <p>Para cualquier comunicación relacionada con este protocolo:</p>
+          <a href="mailto:info@carnesbinefar.es">info@carnesbinefar.es</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .legal-sidebar {
+    position: sticky;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sidebar-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.4rem;
+  }
+
+  .sidebar-card h3 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+
+  .sidebar-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .sidebar-card li a {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    padding: 0.35rem 0;
+    display: block;
+    transition: color var(--transition);
+  }
+
+  .sidebar-card li a:hover,
+  .sidebar-card li a[aria-current="page"] {
+    color: var(--color-primary);
+  }
+
+  .sidebar-card p {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .sidebar-card > a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    word-break: break-all;
+  }
+
+  @media (max-width: 900px) {
+    .legal-layout {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .legal-sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .legal-sidebar { grid-template-columns: 1fr; }
+  }
+</style>

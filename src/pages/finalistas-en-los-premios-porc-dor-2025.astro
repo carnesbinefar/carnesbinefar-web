@@ -1,0 +1,247 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Nominados en los premios Porc d'Or 2025"
+  description="El 2025 marca un hito en nuestra trayectoria. Carnes Binéfar ha sido nominado a los premios Porc d'Or 2025 en la 4ª categoría por gestión de lactación."
+>
+  <div class="article-header" style="--accent: #b6347b">
+    <div class="article-header-bg"></div>
+    <div class="container article-header-content">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Noticias</span>
+      </nav>
+      <div class="article-meta">
+        <span class="article-category">Noticias</span>
+        <time datetime="2026-01-07" class="article-date">7 enero 2026</time>
+      </div>
+      <h1>Nominados en los premios Porc d'Or 2025</h1>
+    </div>
+  </div>
+
+  <section class="section article-section">
+    <div class="container article-layout">
+      <article class="article-body prose">
+        <p class="article-lead">
+          El 2025 marca un hito en nuestra trayectoria. Con orgullo compartimos que <strong>Carnes Binéfar ha sido nominado nuevamente a los premios Porc d'Or</strong>, esta vez competiendo en la <strong>4ª categoría</strong> para granjas con más de 2.001 cerdas, con el criterio de "Gestión de Lactación" como eje de evaluación.
+        </p>
+
+        <p>
+          Esta nominación no es solo un reconocimiento a los resultados productivos de nuestra granja, sino también un reflejo de la inversión constante en talento humano y en la mejora continua de nuestras instalaciones. Avanzar a una categoría superior demuestra que el trabajo bien hecho y la mejora continua tienen su recompensa.
+        </p>
+
+        <h2>Una nueva categoría, un nuevo reto</h2>
+        <p>
+          En ediciones anteriores participamos en la 3ª categoría (501-1.000 cerdas), donde ya obtuvimos reconocimientos de Bronce. Esta nominación en la 4ª categoría (más de 2.001 cerdas) refleja el crecimiento de nuestras operaciones y nuestro compromiso con la excelencia técnica.
+        </p>
+        <p>
+          El criterio de evaluación en esta categoría es la <strong>Gestión de Lactación</strong>, un indicador que mide la eficiencia en el manejo de las cerdas durante la fase de lactación, un período crítico que determina en gran medida la productividad global de la granja.
+        </p>
+
+        <h2>Gracias a nuestro equipo</h2>
+        <p>
+          Este logro no sería posible sin el trabajo diario de todos los integrantes del equipo de Carnes Binéfar, cuyo compromiso con el bienestar animal y la mejora continua hace posible alcanzar estos estándares de excelencia.
+        </p>
+        <p>
+          Como siempre decimos: "La calidad no es un acto aislado, sino un hábito que da sus frutos."
+        </p>
+        <p>
+          <strong>¡A por el oro!</strong>
+        </p>
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="award-card">
+          <div class="award-icon" aria-hidden="true">🏆</div>
+          <h3>Premios Porc d'Or 2025</h3>
+          <dl>
+            <dt>Categoría</dt>
+            <dd>4ª — más de 2.001 cerdas</dd>
+            <dt>Criterio</dt>
+            <dd>Gestión de Lactación</dd>
+            <dt>Fecha</dt>
+            <dd>2026</dd>
+          </dl>
+        </div>
+        <div class="related-card">
+          <h3>Artículos relacionados</h3>
+          <ul>
+            <li><a href="/finalistas-en-los-premios-porc-dor-2021">Bronce Porc d'Or 2021</a></li>
+            <li><a href="/finalistas-en-los-premios-porc-dor-2020">Bronce Porc d'Or 2020</a></li>
+            <li><a href="/hello-world">Finalistas Porc d'Or 2018</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .article-header {
+    background: linear-gradient(150deg, color-mix(in srgb, var(--accent) 70%, black) 0%, var(--accent) 60%, color-mix(in srgb, var(--accent) 75%, white) 100%);
+    padding: 5rem 0 3.5rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article-header-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 50%),
+      radial-gradient(circle at 10% 80%, rgba(0,0,0,0.1) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .article-header-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .article-category {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+  }
+
+  .article-date {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.04em;
+  }
+
+  .article-header h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    color: white;
+    max-width: 720px;
+    line-height: 1.2;
+  }
+
+  /* Article layout */
+  .article-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .article-lead {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    line-height: 1.7;
+    font-weight: 400;
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Sidebar */
+  .award-card,
+  .related-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .award-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .award-card h3,
+  .related-card h3 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+
+  .award-card dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.4rem 0.75rem;
+    align-items: start;
+  }
+
+  .award-card dt {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .award-card dd {
+    font-size: 0.88rem;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+
+  .related-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .related-card li a {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    transition: color var(--transition);
+  }
+
+  .related-card li a:hover {
+    color: var(--color-primary);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-top: 2.5rem;
+    text-decoration: none;
+    transition: gap var(--transition);
+  }
+
+  .back-link:hover { gap: 0.6rem; }
+
+  @media (max-width: 900px) {
+    .article-layout {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+</style>
